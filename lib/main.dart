@@ -1,2 +1,18 @@
-// Flutter entry point placeholder
-void main() => runApp(MyApp());
+import 'package:flutter/material.dart';
+
+void main() {
+  runApp(MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'Turly',
+      home: Scaffold(
+        appBar: AppBar(title: Text('Turly')),
+        body: Center(child: Text('Velkommen til Turly!')),
+      ),
+    );
+  }
+}
